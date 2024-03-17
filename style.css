@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+header{
+    background-color: #daac00;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .collapse ul li h4 a{
+    color: white;
+}
+
+.search{
+    background-color: #daac00;
+}
+
+.search form input{
+    border: none;
+    background-color: rgb(252, 195, 2);
+}
+
+.search form button{
+    background: #00bec9;
+}
+.search form:hover{
+    box-shadow: 4px 5px 15px 5px;
+}
+
+/* ===== section - 1 ===== */
+
+.section-1{
+    background-color: #fcc302;
+}
+
+.section-1 .text h1{
+    font-weight: 500;
+    color: white;
+}
+
+.section-1 .text h3{
+    color: white;
+    font-weight: 300;
+}
+
+/* ===== section - 2 ===== */
+
+.section-2{
+    background-color: white;
+}
+
+.section-2 .text h3{
+    font-weight: 500;
+}
+
+.section-2 .text h4{
+    font-weight: 400;
+}
+
+.section-2 .text button{
+    background-color: #fcc302;
+    font-weight: 600;
+}
+
+.section-2 .text button:hover{
+    background-color: white;
+    color: #fcc302;
+    font-weight: 600;
+}
+
+.section-2 img{
+    position: relative;
+    z-index: 2;
+}
+
+.image{
+    position: relative;
+} 
+
+.section-2 .image span{
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    background-color: #fcc302;
+    height: 65%;
+    width: 65%;
+    z-index: 1;
+}
+
+.image::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    background-color: #fcc302;
+    opacity: 0;
+}
+
+.image::after{
+    position: absolute;
+    content: "\f019";
+    font-size: 130px;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+}
+
+.image:hover::before{
+    opacity: 0.5;
+    transition: 0.7s ease-in-out;
+}
+
+.image:hover::after{
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+
+.img_overlay:hover .t{
+    opacity: 1;
+}
+
+
+/* ===== section - 3 ===== */
+
+.section-3{
+    background-color: #fcc302;
+    color: white;
+}
+
+.section-3 .text h1{
+    font-weight: 600;
+}
+
+.section-3 .text p{
+    font-weight: 100;
+}
+
+.section-3 .card{
+    background-color: #fcc302;
+    border: none;
+}
+/* ===== section - 4 ===== */
+.section-4 .image{
+    position: relative;
+}
+
+.section-4 .image span{
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+    height: 65%;
+    width: 65%;
+    background-color: #fcc302;
+    z-index: -1;
+}
+
+.section-4 .text button{
+    background-color: #fcc302;
+    font-weight: 600;
+}
+
+.section-4 .text button:hover{
+    background-color: white;
+    color: #fcc302;
+    font-weight: 600;
+}
+
+/* ===== section - 5 ===== */
+
+
+.section-5{
+    background-color: #fcc302;
+    color: white;
+}
+
+.section-5 .text h1{
+    font-weight: 600;
+}
+
+.section-5 .text p{
+    font-weight: 100;
+}
+
+.section-5 .card{
+    background-color: #fcc302;
+    border: none;
+}
+
+
+/* ====== section - 6 ====== */
+
+.section-6 .social_media {
+    font-size: 25px;
+    
+}
+
+.social_media i{
+    background-color: #fcc302;
+    color: white;
+}
+
+/* ===== section - 7 ===== */
+
+.sec-7-main{
+    background-image:url("/images/sec-7-bg.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;  
+    color: white; 
+}
+
+.sec-7-main::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #eecd61;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.sec-7-main .icon{
+    z-index: 3;
+    font-size: 80px;
+}
